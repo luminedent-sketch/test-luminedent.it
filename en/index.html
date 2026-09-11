@@ -9,8 +9,9 @@
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://luminedent.it/en/">
   <link rel="alternate" hreflang="it" href="https://luminedent.it/">
+  <link rel="alternate" hreflang="en" href="https://luminedent.it/en/">
   <link rel="alternate" hreflang="en-gb" href="https://luminedent.it/en/">
-  <link rel="alternate" hreflang="x-default" href="https://luminedent.it/">
+  <link rel="alternate" hreflang="x-default" href="https://luminedent.it/en/">
   <meta property="og:title" content="Dental Clinic in Albania for International Patients | Implants €400, Veneers €300 | Luminedent">
   <meta property="og:description" content="Luminedent is a Tirana dental clinic for international patients: English-speaking dentists, CE-certified materials, written guarantees, prices up to 75% below European private rates. Schedule your visit in 2 minutes.">
   <meta property="og:url" content="https://luminedent.it/en/">
@@ -531,6 +532,10 @@ body { padding-bottom: 74px; }
 .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
 .small-note { font-size: 0.78rem; color: var(--ink-faint); margin-top: 16px; max-width: 68ch; }
 
+
+/* Menu mobile aperto: via il CTA fisso e la bolla WhatsApp, che si sovrappongono al menu */
+body.nav-open .sticky-mobile-cta,
+body.nav-open .wa-float { display: none; }
 </style>
 </head>
 <body>
@@ -882,7 +887,9 @@ body { padding-bottom: 74px; }
 const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbw0wXLToNfVhlT93CuM6lGsQ2yAsJDVZvRr4U4yLoQeacPsDH8dEFpy6xjaLgIEqm4L/exec';
 
 function toggleNav() {
-  document.getElementById('navMobile').classList.toggle('open');
+  var panel = document.getElementById('navMobile');
+  var open = panel.classList.toggle('open');
+  document.body.classList.toggle('nav-open', open);
 }
 
 function selectNeed(btn) {

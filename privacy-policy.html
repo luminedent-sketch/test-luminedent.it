@@ -487,6 +487,10 @@ body { padding-bottom: 74px; }
 .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
 .small-note { font-size: 0.78rem; color: var(--ink-faint); margin-top: 16px; max-width: 68ch; }
 
+
+/* Menu mobile aperto: via il CTA fisso e la bolla WhatsApp, che si sovrappongono al menu */
+body.nav-open .sticky-mobile-cta,
+body.nav-open .wa-float { display: none; }
 </style>
 </head>
 <body>
@@ -656,7 +660,9 @@ body { padding-bottom: 74px; }
 const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbw0wXLToNfVhlT93CuM6lGsQ2yAsJDVZvRr4U4yLoQeacPsDH8dEFpy6xjaLgIEqm4L/exec';
 
 function toggleNav() {
-  document.getElementById('navMobile').classList.toggle('open');
+  var panel = document.getElementById('navMobile');
+  var open = panel.classList.toggle('open');
+  document.body.classList.toggle('nav-open', open);
 }
 
 function selectNeed(btn) {

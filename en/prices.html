@@ -9,8 +9,9 @@
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://luminedent.it/en/prices.html">
   <link rel="alternate" hreflang="it" href="https://luminedent.it/prezzi.html">
+  <link rel="alternate" hreflang="en" href="https://luminedent.it/en/prices.html">
   <link rel="alternate" hreflang="en-gb" href="https://luminedent.it/en/prices.html">
-  <link rel="alternate" hreflang="x-default" href="https://luminedent.it/prezzi.html">
+  <link rel="alternate" hreflang="x-default" href="https://luminedent.it/en/prices.html">
   <meta property="og:title" content="Dental Prices Albania 2026 — Implants €400, Veneers €300 | Luminedent Tirana">
   <meta property="og:description" content="Full 2026 price list for international patients: implants €400, E-max veneers €300, crowns €180, All-on-4 €4,640, All-on-6 €9,120, braces €2,000. Schedule your visit in 2 minutes.">
   <meta property="og:url" content="https://luminedent.it/en/prices.html">
@@ -550,6 +551,10 @@ body { padding-bottom: 74px; }
 .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
 .small-note { font-size: 0.78rem; color: var(--ink-faint); margin-top: 16px; max-width: 68ch; }
 
+
+/* Menu mobile aperto: via il CTA fisso e la bolla WhatsApp, che si sovrappongono al menu */
+body.nav-open .sticky-mobile-cta,
+body.nav-open .wa-float { display: none; }
 </style>
 </head>
 <body>
@@ -725,6 +730,7 @@ body { padding-bottom: 74px; }
       <div class="faq-item"><button type="button" class="faq-q" onclick="toggleFaq(this)">How do I get an exact price for my case?<span class="faq-icon">+</span></button><div class="faq-a">Send us a recent X-ray or a few photos via the form below or on WhatsApp. Our dental team reviews it and confirms your booking, with the exact price, within 2 hours.</div></div>
     </div>
   </div>
+    <p class="guide-link" style="margin-top:22px;font-size:0.92rem;">Read the guide: <a href="/en/guide/how-much-do-dental-implants-cost.html" style="color:var(--teal);font-weight:600;">How much dental treatment in Albania really costs →</a></p>
 </section>
 
 <section class="bg-ink">
@@ -826,7 +832,9 @@ body { padding-bottom: 74px; }
 const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbw0wXLToNfVhlT93CuM6lGsQ2yAsJDVZvRr4U4yLoQeacPsDH8dEFpy6xjaLgIEqm4L/exec';
 
 function toggleNav() {
-  document.getElementById('navMobile').classList.toggle('open');
+  var panel = document.getElementById('navMobile');
+  var open = panel.classList.toggle('open');
+  document.body.classList.toggle('nav-open', open);
 }
 
 function selectNeed(btn) {

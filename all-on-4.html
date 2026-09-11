@@ -9,8 +9,9 @@
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://luminedent.it/all-on-4.html">
   <link rel="alternate" hreflang="it" href="https://luminedent.it/all-on-4.html">
+  <link rel="alternate" hreflang="en" href="https://luminedent.it/en/all-on-4.html">
   <link rel="alternate" hreflang="en-gb" href="https://luminedent.it/en/all-on-4.html">
-  <link rel="alternate" hreflang="x-default" href="https://luminedent.it/all-on-4.html">
+  <link rel="alternate" hreflang="x-default" href="https://luminedent.it/en/all-on-4.html">
   <meta property="og:title" content="All-on-4 Albania Prezzi 2026 | Da 4.640€ | Luminedent Tirana">
   <meta property="og:description" content="All-on-4 a Tirana: arcata fissa completa su 4 impianti da 4.640€. Denti provvisori fissi lo stesso giorno, garanzia scritta. Fissa la tua visita.">
   <meta property="og:url" content="https://luminedent.it/all-on-4.html">
@@ -81,9 +82,9 @@
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
     {"@type":"Question","name":"L'All-on-4 e doloroso?","acceptedAnswer":{"@type":"Answer","text":"L'intervento si esegue in anestesia locale o sedazione. Gonfiore nei giorni successivi e normale e gestito con antidolorifici standard."}},
-    {"@type":"Question","name":"Qual e la differenza tra All-on-4 e All-on-6?","acceptedAnswer":{"@type":"Answer","text":"L'All-on-6 utilizza 6 impianti invece di 4, offrendo maggiore stabilita nei casi con osso piu sottile."}},
+    {"@type":"Question","name":"Qual e la differenza tra All-on-4 e All-on-6?","acceptedAnswer":{"@type":"Answer","text":"L'All-on-6 utilizza 6 impianti invece di 4, offrendo maggiore stabilità nei casi con osso più sottile."}},
     {"@type":"Question","name":"Devo restare senza denti durante la guarigione?","acceptedAnswer":{"@type":"Answer","text":"No, viene applicato un ponte provvisorio fisso lo stesso giorno dell'intervento."}},
-    {"@type":"Question","name":"Quanto durano gli impianti All-on-4?","acceptedAnswer":{"@type":"Answer","text":"Con una buona igiene orale, gli impianti durano tipicamente 20 anni o piu."}}
+    {"@type":"Question","name":"Quanto durano gli impianti All-on-4?","acceptedAnswer":{"@type":"Answer","text":"Con una buona igiene orale, gli impianti durano tipicamente 20 anni o più."}}
   ]}
   </script>
 
@@ -559,6 +560,10 @@ body { padding-bottom: 74px; }
 .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
 .small-note { font-size: 0.78rem; color: var(--ink-faint); margin-top: 16px; max-width: 68ch; }
 
+
+/* Menu mobile aperto: via il CTA fisso e la bolla WhatsApp, che si sovrappongono al menu */
+body.nav-open .sticky-mobile-cta,
+body.nav-open .wa-float { display: none; }
 </style>
 </head>
 <body>
@@ -763,6 +768,7 @@ body { padding-bottom: 74px; }
       <div class="faq-item"><button type="button" class="faq-q" onclick="toggleFaq(this)">Come fisso la mia visita?<span class="faq-icon">+</span></button><div class="faq-a">Invia la tua radiografia panoramica (se ne hai una) su WhatsApp o tramite il modulo qui sotto. Confermiamo la tua prenotazione, con prezzo esatto e date disponibili, entro 24-48 ore.</div></div>
     </div>
   </div>
+    <p class="guide-link" style="margin-top:22px;font-size:0.92rem;">Approfondisci nella Guida: <a href="/guida/all-on-4-vs-all-on-6.html" style="color:var(--teal);font-weight:600;">All-on-4 o All-on-6: quale scegliere →</a></p>
 </section>
 
 <section class="bg-ink">
@@ -864,7 +870,9 @@ body { padding-bottom: 74px; }
 const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbw0wXLToNfVhlT93CuM6lGsQ2yAsJDVZvRr4U4yLoQeacPsDH8dEFpy6xjaLgIEqm4L/exec';
 
 function toggleNav() {
-  document.getElementById('navMobile').classList.toggle('open');
+  var panel = document.getElementById('navMobile');
+  var open = panel.classList.toggle('open');
+  document.body.classList.toggle('nav-open', open);
 }
 
 function selectNeed(btn) {

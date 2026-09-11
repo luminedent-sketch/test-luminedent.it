@@ -9,8 +9,9 @@
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://luminedent.it/">
   <link rel="alternate" hreflang="it" href="https://luminedent.it/">
+  <link rel="alternate" hreflang="en" href="https://luminedent.it/en/">
   <link rel="alternate" hreflang="en-gb" href="https://luminedent.it/en/">
-  <link rel="alternate" hreflang="x-default" href="https://luminedent.it/">
+  <link rel="alternate" hreflang="x-default" href="https://luminedent.it/en/">
   <meta property="og:title" content="Dentista Albania Tirana | Impianti 400€, Faccette E-max 300€ | Luminedent">
   <meta property="og:description" content="Clinica dentale a Tirana: impianti da 400€, faccette E-max da 300€, All-on-4 da 4.640€. Materiali certificati CE, team italofono, garanzia scritta. Fissa la tua visita in 2 minuti.">
   <meta property="og:url" content="https://luminedent.it/">
@@ -55,7 +56,7 @@
     {"@type":"Question","name":"Quanto costa rifarsi i denti in Albania rispetto all'Italia?","acceptedAnswer":{"@type":"Answer","text":"In media si risparmia il 65-75%, anche considerando viaggio e soggiorno. Un impianto singolo costa 400€ contro i 1.500-2.500€ medi in Italia."}},
     {"@type":"Question","name":"Come si paga il trattamento?","acceptedAnswer":{"@type":"Answer","text":"Il pagamento avviene in un'unica soluzione, in euro, direttamente in clinica al momento del trattamento, con il prezzo confermato per iscritto prima dell'arrivo."}},
     {"@type":"Question","name":"Quante volte devo venire a Tirana?","acceptedAnswer":{"@type":"Answer","text":"Per un impianto singolo, di solito 2 viaggi. All-on-4/6 richiede in genere 2 viaggi di 4-5 giorni. Le faccette si completano spesso in un'unica trasferta di 5-7 giorni."}},
-    {"@type":"Question","name":"Usate solo faccette E-max?","acceptedAnswer":{"@type":"Answer","text":"Si, utilizziamo esclusivamente faccette E-max, a 300 euro a dente, senza alternative in composito o materiali di qualita inferiore."}}
+    {"@type":"Question","name":"Usate solo faccette E-max?","acceptedAnswer":{"@type":"Answer","text":"Si, utilizziamo esclusivamente faccette E-max, a 300 euro a dente, senza alternative in composito o materiali di qualità inferiore."}}
   ]}
   </script>
 
@@ -531,6 +532,10 @@ body { padding-bottom: 74px; }
 .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
 .small-note { font-size: 0.78rem; color: var(--ink-faint); margin-top: 16px; max-width: 68ch; }
 
+
+/* Menu mobile aperto: via il CTA fisso e la bolla WhatsApp, che si sovrappongono al menu */
+body.nav-open .sticky-mobile-cta,
+body.nav-open .wa-float { display: none; }
 </style>
 </head>
 <body>
@@ -913,7 +918,9 @@ body { padding-bottom: 74px; }
 const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbw0wXLToNfVhlT93CuM6lGsQ2yAsJDVZvRr4U4yLoQeacPsDH8dEFpy6xjaLgIEqm4L/exec';
 
 function toggleNav() {
-  document.getElementById('navMobile').classList.toggle('open');
+  var panel = document.getElementById('navMobile');
+  var open = panel.classList.toggle('open');
+  document.body.classList.toggle('nav-open', open);
 }
 
 function selectNeed(btn) {
