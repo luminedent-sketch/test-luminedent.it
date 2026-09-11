@@ -2,7 +2,7 @@
 # I redirect attivi sono in vercel.json.
 # Luminedent — redirect 301 per URL-te e hequra/konsoliduara ne rebuild v2
 /impianti-singoli.html  /impianti-dentali.html  301
-/guida-prezzi.html  /guida/prezzi-dentista-albania.html  301
+/guida-prezzi.html  /guida/costo-cure-dentali-albania-vs-italia.html  301
 /recensioni.html  /chi-siamo.html#recensioni  301
 /servizi.html  /index.html#servizi  301
 /preventivo.html  /prezzi.html  301
