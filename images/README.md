@@ -12,8 +12,11 @@ Il tag `og:image` di tutte le pagine punta al dominio di test:
 
 Prima di puntare il dominio, sostituirlo su tutte le pagine:
 
-    grep -rl test-luminedent-it.vercel.app/images --include="*.html" . \
-      | xargs sed -i '' 's|https://test-luminedent-it.vercel.app/images/|https://luminedent.it/images/|g'
+    grep -rl test-luminedent-it.vercel.app --include="*.html" . \
+      | xargs sed -i '' 's|https://test-luminedent-it.vercel.app/|https://luminedent.it/|g'
+
+Riguarda `og:image`, `twitter:image` e, nel JSON-LD, `"image"` (25 pagine) e
+`"logo"` (28 pagine, `/logo.png` in root).
 
 Il sito vecchio serve un `/images/og-image.png` diverso: Facebook e LinkedIn
 possono tenerlo in cache. Dopo il passaggio, forzare il refresh dai rispettivi
