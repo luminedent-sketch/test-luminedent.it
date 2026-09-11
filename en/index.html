@@ -184,7 +184,7 @@ header.site-nav {
 
 .nav-dropdown { position: relative; }
 .nav-dropdown-panel {
-  display: none; position: absolute; top: 100%; left: -16px; margin-top: 10px;
+  display: none; position: absolute; top: 100%; left: -16px; margin-top: 0;
   background: var(--white); border: 1px solid var(--line); border-radius: 10px;
   box-shadow: 0 8px 24px rgba(15,42,38,0.10); padding: 8px; min-width: 200px;
   flex-direction: column; z-index: 50;
@@ -194,8 +194,7 @@ header.site-nav {
   color: var(--ink-soft); font-size: 0.9rem; font-weight: 500; white-space: nowrap;
 }
 .nav-dropdown-panel a:hover { background: var(--teal-pale); color: var(--teal-deep); }
-.nav-dropdown:hover .nav-dropdown-panel,
-.nav-dropdown:focus-within .nav-dropdown-panel { display: flex; }
+.nav-dropdown.open .nav-dropdown-panel { display: flex; }
 
 @media (min-width: 900px) {
   .nav-links { display: flex; }
@@ -953,6 +952,23 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+  var treatments = document.querySelector(".nav-dropdown > a");
+  var dropdown = document.querySelector(".nav-dropdown");
+
+  if (treatments && dropdown) {
+    treatments.addEventListener("click", function(e) {
+      e.preventDefault();
+      dropdown.classList.toggle("open");
+    });
+
+    document.addEventListener("click", function(e) {
+      if (!dropdown.contains(e.target)) {
+        dropdown.classList.remove("open");
+      }
+    });
+  }
+});
 </script>
 </body>
 </html>
