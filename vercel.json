@@ -1,0 +1,245 @@
+{
+  "cleanUrls": false,
+  "redirects": [
+    {
+      "source": "/blog.html",
+      "destination": "/guida.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/15-domande-frequenti-dentisti-albania.html",
+      "destination": "/prezzi.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/all-on-4-albania-costo-procedura-guida.html",
+      "destination": "/all-on-4.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/all-on-4-albania-errori-da-evitare-guida-2026.html",
+      "destination": "/all-on-4.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/all-on-4-albania-tutto-da-sapere.html",
+      "destination": "/all-on-4.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/all-on-4-vs-all-on-6-albania-quale-scegliere.html",
+      "destination": "/guida/all-on-4-vs-all-on-6.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/all-on-6-albania-guida-completa.html",
+      "destination": "/all-on-6.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/all-on-6-albania-recupero-vita-quotidiana-guida-2026.html",
+      "destination": "/all-on-6.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/apparecchio-denti-albania-costo.html",
+      "destination": "/ortodonzia.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/cliniche-dentali-albania-sicure-verita.html",
+      "destination": "/guida/dentista-albania-sicurezza.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/come-organizzare-viaggio-cure-dentali-tirana.html",
+      "destination": "/contattaci.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/costo-faccette-dentali-albania.html",
+      "destination": "/faccette-dentali.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/cure-dentali-albania-guida-definitiva.html",
+      "destination": "/prezzi.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/denti-a-rate-albania-guida-completa.html",
+      "destination": "/prezzi.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/faccette-ceramica-prima-dopo-costi-procedura.html",
+      "destination": "/faccette-dentali.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/faccette-dentali-albania-guida-completa.html",
+      "destination": "/faccette-dentali.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/faccette-dentali-costo-albania-guida-prezzi.html",
+      "destination": "/faccette-dentali.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/faccette-dentali-emax-vs-zirconio-albania.html",
+      "destination": "/guida/faccette-dentali-durata.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/faccette-dentali-prima-dopo-albania-risultati.html",
+      "destination": "/faccette-dentali.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ortodonzia-albania.html",
+      "destination": "/ortodonzia.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/pagamento-rateale-dentista-albania.html",
+      "destination": "/prezzi.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/preventivo-dentista-albania.html",
+      "destination": "/prezzi.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/prezzi-impianti-dentali-albania.html",
+      "destination": "/impianti-dentali.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/quanto-costa-apparecchio-albania.html",
+      "destination": "/ortodonzia.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/quanto-costa-dentista-albania.html",
+      "destination": "/guida/prezzi-dentista-albania.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/quanto-costa-impianto-dentale-albania-vs-italia.html",
+      "destination": "/impianti-dentali.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/quanto-costa-mettere-faccette-dentali-albania.html",
+      "destination": "/faccette-dentali.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/quanto-costa-sbiancamento-denti-albania.html",
+      "destination": "/faccette-dentali.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/sbiancamento-denti-albania-costo.html",
+      "destination": "/faccette-dentali.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/sbiancamento-denti-albania-guida-completa.html",
+      "destination": "/faccette-dentali.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/trapianto-capelli-fue-albania-guida-2026.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/consulenza-gratuita.html",
+      "destination": "/contattaci.html",
+      "permanent": true
+    },
+    {
+      "source": "/cure-dentali-albania.html",
+      "destination": "/prezzi.html",
+      "permanent": true
+    },
+    {
+      "source": "/guida-prezzi.html",
+      "destination": "/guida/prezzi-dentista-albania.html",
+      "permanent": true
+    },
+    {
+      "source": "/impianti-singoli.html",
+      "destination": "/impianti-dentali.html",
+      "permanent": true
+    },
+    {
+      "source": "/offerta-maggio-2026.html",
+      "destination": "/prezzi.html",
+      "permanent": true
+    },
+    {
+      "source": "/pacchetto-completo.html",
+      "destination": "/prezzi.html",
+      "permanent": true
+    },
+    {
+      "source": "/pagamento-rateale.html",
+      "destination": "/prezzi.html",
+      "permanent": true
+    },
+    {
+      "source": "/preventivo.html",
+      "destination": "/prezzi.html",
+      "permanent": true
+    },
+    {
+      "source": "/protesi-fissa.html",
+      "destination": "/all-on-4.html",
+      "permanent": true
+    },
+    {
+      "source": "/quiz-allon.html",
+      "destination": "/all-on-4.html",
+      "permanent": true
+    },
+    {
+      "source": "/recensioni.html",
+      "destination": "/chi-siamo.html#recensioni",
+      "permanent": true
+    },
+    {
+      "source": "/referral.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/rifacimento-denti-albania.html",
+      "destination": "/prezzi.html",
+      "permanent": true
+    },
+    {
+      "source": "/sbiancamento.html",
+      "destination": "/faccette-dentali.html",
+      "permanent": true
+    },
+    {
+      "source": "/servizi.html",
+      "destination": "/#servizi",
+      "permanent": true
+    },
+    {
+      "source": "/turismo-dentale-albania-prezzi.html",
+      "destination": "/guida/prezzi-dentista-albania.html",
+      "permanent": true
+    },
+    {
+      "source": "/turismo-dentale-albania.html",
+      "destination": "/guida/dentista-albania-sicurezza.html",
+      "permanent": true
+    }
+  ]
+}

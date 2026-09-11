@@ -1,3 +1,5 @@
+# NOTA: su Vercel questo file NON viene letto (sintassi Netlify).
+# I redirect attivi sono in vercel.json.
 # Luminedent — redirect 301 per URL-te e hequra/konsoliduara ne rebuild v2
 /impianti-singoli.html  /impianti-dentali.html  301
 /guida-prezzi.html  /guida/prezzi-dentista-albania.html  301
