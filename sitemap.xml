@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url><loc>https://luminedent.it/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://luminedent.it/en/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+
+  <url><loc>https://luminedent.it/impianti-dentali.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://luminedent.it/en/dental-implants.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+
+  <url><loc>https://luminedent.it/all-on-4.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://luminedent.it/en/all-on-4.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+
+  <url><loc>https://luminedent.it/all-on-6.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://luminedent.it/en/all-on-6.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+
+  <url><loc>https://luminedent.it/faccette-dentali.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://luminedent.it/en/veneers.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+
+  <url><loc>https://luminedent.it/corona-dentale.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://luminedent.it/en/crowns.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <url><loc>https://luminedent.it/ortodonzia.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://luminedent.it/en/orthodontics.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <url><loc>https://luminedent.it/prezzi.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://luminedent.it/en/prices.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+
+  <url><loc>https://luminedent.it/guida.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://luminedent.it/en/guide.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+
+  <url><loc>https://luminedent.it/guida/all-on-4-vs-all-on-6.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://luminedent.it/en/guide/all-on-4-vs-all-on-6.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <url><loc>https://luminedent.it/guida/dentista-albania-sicurezza.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://luminedent.it/en/guide/is-dental-treatment-albania-safe.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <url><loc>https://luminedent.it/guida/faccette-dentali-durata.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://luminedent.it/en/guide/emax-veneers-explained.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <url><loc>https://luminedent.it/guida/prezzi-dentista-albania.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://luminedent.it/en/guide/how-much-do-dental-implants-cost.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <url><loc>https://luminedent.it/chi-siamo.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://luminedent.it/en/about.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+
+  <url><loc>https://luminedent.it/contattaci.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://luminedent.it/en/contact.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+
+</urlset>
