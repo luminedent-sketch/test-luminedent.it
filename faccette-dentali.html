@@ -227,9 +227,13 @@ header.site-nav {
   display: block; padding: 10px 14px; border-radius: 6px; text-decoration: none;
   color: var(--ink-soft); font-size: 0.9rem; font-weight: 500; white-space: nowrap;
 }
+.nav-dropdown-panel::before {
+  content: ''; position: absolute; left: 0; right: 0; top: -12px; height: 12px;
+}
 .nav-dropdown-panel a:hover { background: var(--teal-pale); color: var(--teal-deep); }
 .nav-dropdown:hover .nav-dropdown-panel,
-.nav-dropdown:focus-within .nav-dropdown-panel { display: flex; }
+.nav-dropdown:focus-within .nav-dropdown-panel,
+.nav-dropdown.open .nav-dropdown-panel { display: flex; }
 
 @media (min-width: 900px) {
   .nav-links { display: flex; }
@@ -942,6 +946,45 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 });
 
+</script>
+<script>
+/* Menu Trattamenti / Treatments: hover apre, click blocca aperto, Esc o click fuori chiude */
+document.addEventListener('DOMContentLoaded', function () {
+  var dropdowns = document.querySelectorAll('.nav-dropdown');
+  if (!dropdowns.length) return;
+
+  function close(dd) {
+    dd.classList.remove('open');
+    var t = dd.querySelector(':scope > a');
+    if (t) t.setAttribute('aria-expanded', 'false');
+  }
+
+  dropdowns.forEach(function (dd) {
+    var trigger = dd.querySelector(':scope > a');
+    if (!trigger) return;
+    trigger.setAttribute('aria-haspopup', 'true');
+    trigger.setAttribute('aria-expanded', 'false');
+
+    trigger.addEventListener('click', function (e) {
+      e.preventDefault();
+      var open = !dd.classList.contains('open');
+      dropdowns.forEach(close);
+      if (open) {
+        dd.classList.add('open');
+        trigger.setAttribute('aria-expanded', 'true');
+      }
+    });
+
+    dd.addEventListener('mouseleave', function () { close(dd); });
+  });
+
+  document.addEventListener('click', function (e) {
+    dropdowns.forEach(function (dd) { if (!dd.contains(e.target)) close(dd); });
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') dropdowns.forEach(close);
+  });
+});
 </script>
 </body>
 </html>
