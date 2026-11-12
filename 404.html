@@ -708,7 +708,7 @@ async function submitLeadForm(e, sourceLabel) {
     if (btn) btn.textContent = form.dataset.sent || 'Sent ✓';
     try { if (window.gtag) gtag('event', 'generate_lead', { lead_source: payload.source, service: payload.service, language: payload.language }); } catch (x) {}
     form.reset();
-    setTimeout(function () { location.href = (payload.language === 'en' ? '/en/thank-you.html' : '/grazie.html') + '?s=' + encodeURIComponent(payload.service || ''); }, 400);
+    setTimeout(function () { location.href = (payload.language === 'en' ? '/en/thank-you.html' : payload.language === 'pl' ? '/pl/dziekujemy.html' : '/grazie.html') + '?s=' + encodeURIComponent(payload.service || ''); }, 400);
   } catch (err) {
     if (errMsg) errMsg.style.display = 'block';
     if (btn) { btn.disabled = false; btn.textContent = originalLabel; }
