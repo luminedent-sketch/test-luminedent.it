@@ -28,7 +28,7 @@ function submitLead(form,extra){
   if(extra&&extra.summary)msg=(msg?msg+'\n\n':'')+extra.summary;
   if(extra&&extra.service&&!svc)svc=extra.service;
   var p={name:g('nome'),surname:g('cognome'),nome:g('nome'),cognome:g('cognome'),email:g('email'),telefono:g('tel'),phone:g('tel'),service:svc,servizio:svc,messaggio:msg,description:msg,
-    language:LM.lang,market:LM.lang==='en'?'EN':'IT',source:(extra&&extra.source)||'Lumine platform',hp:hp?hp.value:'',elapsed_ms:Date.now()-window.__ldT0,
+    language:LM.lang,market:(LM.lang||'it').toUpperCase(),source:(extra&&extra.source)||'Lumine platform',hp:hp?hp.value:'',elapsed_ms:Date.now()-window.__ldT0,
     sid:(window.crypto&&crypto.randomUUID)?crypto.randomUUID():String(Date.now())+Math.random().toString(16).slice(2),
     page:location.pathname,referrer:document.referrer||'',utm:location.search.slice(1),landing:ls('ld_landing')||'',trail:ls('ld_trail')||'',first_referrer:ls('ld_ref')||''};
   var old=btn?btn.textContent:'';if(btn){btn.disabled=true;btn.textContent=C.sending}
