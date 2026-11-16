@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://luminedent.it/sitemap.xml
